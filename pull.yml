@@ -1,0 +1,12 @@
+- hosts: all
+  connection: local
+  
+  tasks:
+  
+  - yum:
+      name: nginx
+      state: present
+      
+  - service:
+      name: nginx
+      state: started
